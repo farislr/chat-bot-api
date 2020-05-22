@@ -1,0 +1,49 @@
+{
+  "name": "chat-bot-api",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "Faris Luthfan R",
+  "license": "MIT",
+  "dependencies": {
+    "@types/express": "^4.17.6",
+    "@types/node": "^13.13.2",
+    "@types/socket.io": "^2.1.4",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "pg": "^8.0.3",
+    "pg-hstore": "^2.3.3",
+    "reflect-metadata": "^0.1.13",
+    "socket.io": "^2.3.0",
+    "ts-node": "^8.9.1",
+    "typeorm": "^0.2.24",
+    "typeorm-naming-strategies": "^1.1.0",
+    "typescript": "^3.8.3"
+  },
+  "devDependencies": {
+    "@types/jest": "^25.2.1",
+    "@typescript-eslint/eslint-plugin": "^2.29.0",
+    "@typescript-eslint/parser": "^2.29.0",
+    "eslint": "^6.8.0",
+    "eslint-config-prettier": "^6.11.0",
+    "jest": "^25.4.0",
+    "nodemon": "^2.0.3",
+    "prettier": "^2.0.5",
+    "ts-jest": "^25.4.0"
+  },
+  "nodemonConfig": {
+    "ignore": [
+      "**/*.test.ts",
+      "**/*.spec.ts",
+      ".git",
+      "node_modules"
+    ],
+    "watch": [
+      "src"
+    ],
+    "exec": "ts-node src/index.ts",
+    "ext": "ts"
+  },
+  "scripts": {
+    "dev": "yarn run nodemon"
+  }
+}
